@@ -16,6 +16,23 @@ header .containers{
     justify-content: space-between;
 }
 
+header h1{
+    margin-left: 80px;
+}
+
+header img{
+    width: 64px;
+    position: absolute;
+}
+
+header h2{
+    margin-left: 115px;
+    margin-top: 8px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
 header li{
     display: inline;
     font-family: Arial, Helvetica, sans-serif;
@@ -103,6 +120,55 @@ section h2,
 
 #economy .articles article a{
     background-color: #ff9f1a;
+}
+
+#tecnology{
+    background-color: azure;
+}
+
+#tecnology .articles article a{
+    background-color: cadetblue;
+
+}
+
+#entreteniment{
+    background-color: cornsilk;
+
+}
+
+#entreteniment .articles article a{
+    background-color: burlywood;
+
+}
+
+#fixed{
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    right: 16px;
+}
+
+#fixed a{
+    text-decoration: none;
+    margin-right: 8px;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+
+#fixed a:hover{
+    background-color: black;
+    color: white;
+    text-decoration: underline;
+}
+
+#fixed img{
+    width: 128px;
+}
+
+#tecnology .articles li{
+    margin-left: 16px;
+    margin-top: 8px;
 }
 /*posso usar element.style com fixed para deixa-lo na tela
 relative para deixar relativo a um box.  button, right, left and top*/
