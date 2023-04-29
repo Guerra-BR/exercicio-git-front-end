@@ -4,42 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de médias</title>
+    <link rel="stylesheet" href="./index.html">
+    <title>Agenda de Contatos</title>
 </head>
 <body>
     <header>
-        <img src="./images/logo.png" alt="capelo e diploma">
-        <h1>Caluladora de méidas</h1>
+
     </header>
-    <form>
-        <input type="text" required placeholder="Nome da atividade">
-        <input type="number" required placeholder="Nota da aitidade" max="10" min="0">
-        <button type="submit">Adicoinar +</button>
+    <form action="">
+        <input id="input-nome" type="text" required placeholder="Nome do contato">
+        <input id="input-telefone" type="tel" required placeholder="Número do telefone">
     </form>
     <table>
         <thead>
             <tr>
                 <th>
-                    Nome da atividade
+                    Nome do contato
                 </th>
-                <th>Nota da atividade</th>
-                <th>Aprovado?</th>
+                <th>Número de telefone</th>
             </tr>
-            <tbody>
-                <tr>
-                    <td>atividade 1</td>
-                    <td>7</td>
-                    <td><img src="./images/aprovado.png" alt="Emoji festejando"></td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td>Média final</td>
-                    <td>7</td>
-                    <td>Aprovado</td>
-                </tr>
-            </tfoot>
         </thead>
+        <tbody>
+            <tr>
+                <td>Zé</td>
+                <td>8002-8922</td>
+            </tr>
+        </tbody>
     </table>
+    <script src="./main.js"></script>
 </body>
 </html>
