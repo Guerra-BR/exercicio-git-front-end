@@ -113,6 +113,7 @@ header nav ul li a:hover{
     #secao-sobre img{
         max-width: 100%;
         width: 100%;
+        margin-bottom: 32px;
     }
 
     .produtos ul{
@@ -123,7 +124,7 @@ header nav ul li a:hover{
     }
 }
 
-@media screen and (max-width: 727px) {
+@media screen and (max-width: 767px) {
     .container{
         max-width: 90%;
     }
@@ -135,6 +136,7 @@ header nav ul li a:hover{
     #secao-sobre img{
         max-width: 100%;
         width: 100%;
+        margin-bottom: 32px;
     }
 
     .produtos ul{
