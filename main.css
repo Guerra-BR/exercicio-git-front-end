@@ -1,101 +1,151 @@
-@font-face {font-family: "TacticSans-Reg"; 
-    src: url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.eot"); src: url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.eot?#iefix") format("embedded-opentype"), 
-    url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.woff") format("woff"), url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.svg#TacticSans-Reg") format("svg"); }
-
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: "TacticSans-Reg";
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
 }
 
 .container{
-    max-width: 960px;
+    max-width: 1024px;
     width: 100%;
     margin: 0 auto;
 }
 
-body{
-    background-color:whitesmoke;
-    padding-top: 100px;
-    font-family: "TacticSans-Reg"
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+header nav ul li{
+    list-style: none;
+    margin-left: 16px;
 }
 
 header{
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
+    padding: 12px;
+    background-color:royalblue;
     color: white;
-    background-color: #FF4500;
-    padding: 0px;
-    font-size: 20px;
-}
-
-header img{
-    max-height: 128px;
-    margin-right: 32px;
-}
-
-form{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
     margin-bottom: 32px;
 }
 
-form input{
-    border: none;
-    background-color: white;
-    font-size: 24px;
-    color: black;
-    padding: 6px;
+header nav ul li{
+    display: inline;
 }
 
-form button{
-    cursor: pointer;
-    border: none;
+header nav ul li a{
+    text-decoration: none;
     color: white;
-    background-color: #FF4500;
+    font-weight: bold;
+}
+
+header nav ul li a:hover{
+    text-decoration: underline;
+}
+
+
+.container h2{
+    font-size: 1.5em;
+    color:royalblue;
+    font-style: italic;
+    padding-bottom: 8px;
+    border-bottom: 2px solid royalblue;
+    margin-bottom: 24px;
+}
+
+#secao-sobre .container{
+    display:flex;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+#secao-sobre img{
+    max-width: 560px;
+    width: 100%;
+    margin-right: 16px;
+}
+
+.produtos ul{
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 1%;
+    row-gap: 10%;
+}
+
+.produtos ul li{
+    list-style: none;
+}
+
+.produtos ul li img{
+    width: 100%;
+}
+
+.produtos ul li button{
+    margin-top: 8px;
+    width: 100%;
     padding: 8px;
-    font-size: 24px;
+    background-color: royalblue;
+    color: white;
+    border: 0;
+    border-radius: 4px;
     font-weight: bold;
 }
 
-form button:hover{
-    background-color: rgb(200, 53, 0);
-    font-weight: bolder;
+.produtos ul li button:hover{
+    cursor: pointer;
 }
 
-table{
-    width: 100%;
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container{
+        max-width: 90%;
+    }
+
+    #secao-sobre .container{
+        display: block;
+    }
+
+    #secao-sobre img{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .produtos ul{
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 1%;
+        row-gap: 5%;
+    }
 }
 
-table th{
-    border-bottom: 2px solid #000;
-    font-size: 24px;
-    font-weight: bold;
+@media screen and (max-width: 727px) {
+    .container{
+        max-width: 90%;
+    }
+
+    #secao-sobre .container{
+        display: block;
+    }
+
+    #secao-sobre img{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .produtos ul{
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        column-gap: 1%;
+        row-gap: 5%;
+    }
+
+    header nav ul li{
+        display: list-item;
+    }
 }
 
-table td{
-    text-align: center;
-    padding: 16px 0;
-    font-size: 18px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.linha-vertical{
-    border-left: 2px solid;
-    box-sizing: border-box;
-}
-
-.nota{
-    background-color: white;
-    padding: 24px;
-    margin-bottom: 32px;
-    display: none;
-}
-
-.erro{
-    background-color: red;
-    font-weight: bold;
-}
