@@ -1,153 +1,39 @@
+@font-face {font-family: "TacticSans-Reg"; 
+    src: url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.eot"); src: url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.woff") format("woff"), url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.svg#TacticSans-Reg") format("svg"); }
+
 *{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: Roboto, sans-serif;
-}
-
-.container{
-    max-width: 1024px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-header .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header h1{
-    font-size: 2em;
-    font-weight: bold;
-    font-style: italic;
-}
-
-header nav ul li{
-    list-style: none;
-    margin-left: 16px;
+    font-family: "TacticSans-Reg";
 }
 
 header{
-    padding: 12px;
-    background-color:royalblue;
+    margin-bottom: 64px;
+    background-color: #FF4500;
     color: white;
+    padding: 16px;
+}
+
+.card-img-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card img{
+    max-height: 560px;
+}
+
+.card{
     margin-bottom: 32px;
 }
 
-header nav ul li{
-    display: inline;
+.container{
+    max-width: 1000px;
 }
 
-header nav ul li a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+#reajuste{
+    max-width: 960px;
+    margin: 0 auto 56px;
 }
 
-header nav ul li a:hover{
-    text-decoration: underline;
+header > .container{
+    max-width: 1200px;
 }
-
-
-.container h2{
-    font-size: 1.5em;
-    color:royalblue;
-    font-style: italic;
-    padding-bottom: 8px;
-    border-bottom: 2px solid royalblue;
-    margin-bottom: 24px;
-}
-
-#secao-sobre .container{
-    display:flex;
-    align-items: flex-start;
-    margin-bottom: 50px;
-}
-
-#secao-sobre img{
-    max-width: 560px;
-    width: 100%;
-    margin-right: 16px;
-}
-
-.produtos ul{
-    display: grid;
-    grid-template-columns: repeat(4, 24%);
-    column-gap: 1%;
-    row-gap: 10%;
-}
-
-.produtos ul li{
-    list-style: none;
-}
-
-.produtos ul li img{
-    width: 100%;
-}
-
-.produtos ul li button{
-    margin-top: 8px;
-    width: 100%;
-    padding: 8px;
-    background-color: royalblue;
-    color: white;
-    border: 0;
-    border-radius: 4px;
-    font-weight: bold;
-}
-
-.produtos ul li button:hover{
-    cursor: pointer;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    .container{
-        max-width: 90%;
-    }
-
-    #secao-sobre .container{
-        display: block;
-    }
-
-    #secao-sobre img{
-        max-width: 100%;
-        width: 100%;
-        margin-bottom: 32px;
-    }
-
-    .produtos ul{
-        display: grid;
-        grid-template-columns: repeat(2, 49%);
-        column-gap: 1%;
-        row-gap: 5%;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .container{
-        max-width: 90%;
-    }
-
-    #secao-sobre .container{
-        display: block;
-    }
-
-    #secao-sobre img{
-        max-width: 100%;
-        width: 100%;
-        margin-bottom: 32px;
-    }
-
-    .produtos ul{
-        display: grid;
-        grid-template-columns: repeat(1, 100%);
-        column-gap: 1%;
-        row-gap: 5%;
-    }
-
-    header nav ul li{
-        display: list-item;
-    }
-}
-
