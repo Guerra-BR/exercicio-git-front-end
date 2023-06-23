@@ -3,37 +3,140 @@
     url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.woff") format("woff"), url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.svg#TacticSans-Reg") format("svg"); }
 
 *{
-    font-family: "TacticSans-Reg";
+    font-family: monospace;
 }
 
 header{
-    margin-bottom: 64px;
-    background-color: #FF4500;
+    background-color: black;
     color: white;
-    padding: 16px;
 }
 
-.card-img-overlay{
-    background-color: rgba(0, 0, 0, 0.7);
+.nav-link,
+#cabecalho .nav-link:hover{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    padding: 8px;
+    font-weight: bold;
 }
 
-.card img{
-    max-height: 560px;
+#cabecalho .nav .nav-link.active{
+    background-color: white;
+    color: black;
 }
 
-.card{
-    margin-bottom: 32px;
+.titulo{
+    font-family: "TacticSans-Reg";
+    font-weight: bold;
+}
+
+#carousel img{
+    height: 640px;
+    width: 100%;
+}
+
+.nav-sobre{
+    padding: 8px;
+    transform: rotate(270deg);
+    margin-top: 90px;
+    background-color: white;
+    border: none;
+    border-bottom: black 2px solid;
+}
+
+.nav-sobre.active{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.laranja{
+    color: #FF4500;
+}
+
+.azul{
+    color: #000060;
+}
+
+#sobre,
+#atuacao{
+    background-color: whitesmoke;
+}
+
+#servicos{
+    background-color: white;
+}
+
+.img-sobre{
+    max-height: 420px;
+    height: 100%;
 }
 
 .container{
-    max-width: 1000px;
+    padding-top: 32px;
+    padding-bottom: 16px;
 }
 
-#reajuste{
-    max-width: 960px;
-    margin: 0 auto 56px;
+.direita{
+    text-align: right;
 }
 
-header > .container{
-    max-width: 1200px;
+#nav-servicos button{
+    padding: 8px 32px 16px 32px;
+    margin: 0 auto;
+    border: none;
+    background-color: white;
+}
+
+#serv-1.active{
+    border-bottom: 3px solid black;
+}
+
+#serv-2.active{
+    border-bottom: 3px solid #000060;
+}
+
+#serv-3.active{
+    border-bottom: 3px solid #FF4500;
+}
+
+#servicos-adm{
+    border-top: 1px solid black;
+}
+
+#servicos-bo{
+    border-top: 1px solid #000060;
+}
+
+#servicos-jf{
+    border-top: 1px solid #FF4500;
+}
+
+#servicos .tab-pane{
+    padding-top: 8px;
+}
+
+.card-img-overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.label-space{
+    margin-top: 24px;
+    padding-left: 16px;
+}
+
+.form-check-input:checked{
+    background-color: black;
+    border-color: white;
+}
+
+form{
+    max-width: 560px;
+    width: 100%;
+}
+
+form input,
+form textarea{
+    resize: none;
+    width: 100%;
 }
